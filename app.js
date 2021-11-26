@@ -21,6 +21,7 @@ async function getQuestion(){
 let newQuestion = document.querySelector("#new-question");
 newQuestion.addEventListener('click', getQuestion);
 
+console.log(correctAnswer)
 // Stores answer in 'answer' when submit clicked
 // check if answer is correct
 function checkAnswerInput () {
