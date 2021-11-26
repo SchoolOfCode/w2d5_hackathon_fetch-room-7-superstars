@@ -37,6 +37,6 @@ submitButton.addEventListener('click', checkAnswerInput)
 // give them a score at the end
 // ask if they'd like to play again
 //create an input element to take user answer as string
-//check the answer againt the actually answer
+//check the answer against the actually answer
 //return a true or false 
 //keep score 
