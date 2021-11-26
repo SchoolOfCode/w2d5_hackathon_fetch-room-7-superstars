@@ -32,7 +32,7 @@ function checkAnswerInput () {
     scoreCard.innerText = userScore;
     userAnswer = '';
     return userScore}
-    else    return console.log('wrong')
+    else window.alert("WRONG!")
 }
 
 let submitButton = document.querySelector("#input-button");
@@ -49,5 +49,9 @@ scoreCard.innerText = userScore;
 //check the answer against the actually answer
 //return a true or false 
 //keep score 
-//get rid funny writing
 //clear previous answer
+
+//get rid funny writing in question 
+// both userAnswer and correctAnswer to be in lowerCase for checking.
+//alert user to incorrect answer to move on 
+
