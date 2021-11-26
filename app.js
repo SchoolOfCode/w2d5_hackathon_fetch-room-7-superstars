@@ -26,13 +26,21 @@ console.log(correctAnswer)
 // Stores answer in 'answer' when submit clicked -- check if answer is correct
 function checkAnswerInput () {
     userAnswer = document.getElementById("userAnswer").value;
-    if (userAnswer === correctAnswer)
-    return console.log('It works')
+    if (userAnswer === correctAnswer){
+    userScore ++
+    console.log(userScore)
+    let scoreCard = document.querySelector('#score-bucket');
+    scoreCard.innerText = userScore;
+    userAnswer = '';
+    return userScore}
     else    return console.log('wrong')
 }
 
-let submitButton = document.querySelector("#input-button")
-submitButton.addEventListener('click', checkAnswerInput)
+let submitButton = document.querySelector("#input-button");
+submitButton.addEventListener('click', checkAnswerInput);
+
+let scoreCard = document.querySelector('#score-bucket');
+scoreCard.innerText = userScore;
 
 // ask their name to use in game?
 // check the answer and return r/w

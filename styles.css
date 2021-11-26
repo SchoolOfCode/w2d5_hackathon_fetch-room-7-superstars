@@ -53,7 +53,7 @@ div {
   text-align: center;
 }
 
-#useranswer {
+#userAnswer {
   display: block;
   width: fit-content;
   align-self: center;
@@ -65,6 +65,50 @@ div {
   width: fit-content;
   align-self: center;
   margin: auto auto 30px auto;
+}
+
+#score-bucket {
+  display: block;
+  width: fit-content;
+  align-self: center;
+  margin: 50px auto auto auto;
+  width: fit-content;
+  align-self: center;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: whitesmoke;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  margin-top: 30px;
+}
+
+.score {
+  display: block;
+  width: fit-content;
+  align-self: center;
+  margin: 50px auto auto auto;
+  width: fit-content;
+  align-self: center;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: whitesmoke;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  margin-top: 50px;
 }
 
 .btn {
