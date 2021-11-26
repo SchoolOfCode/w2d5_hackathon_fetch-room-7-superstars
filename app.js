@@ -27,8 +27,7 @@ console.log(correctAnswer)
 function checkAnswerInput () {
     userAnswer = document.getElementById("userAnswer").value;
     if (userAnswer === correctAnswer){
-    userScore ++
-    console.log(userScore)
+    userScore ++;
     let scoreCard = document.querySelector('#score-bucket');
     scoreCard.innerText = userScore;
     userAnswer = '';
