@@ -29,6 +29,7 @@ p {
   align-self: center;
   justify-content: center;
   margin: auto;
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 28px;
   letter-spacing: 2px;
@@ -83,7 +84,7 @@ div {
   align-self: center;
   margin: auto;
   font-family: "Open Sans", sans-serif;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
