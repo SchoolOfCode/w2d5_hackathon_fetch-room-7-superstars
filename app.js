@@ -1,7 +1,8 @@
 // global variables
-let question
-let correctAnswer
-let useranswer
+let question;
+let correctAnswer;
+let userAnswer;
+let userScore = 0;
 
 // write a fetch request to bring back a question in a p
 async function getQuestion(){
@@ -13,8 +14,8 @@ async function getQuestion(){
     question.innerText = data.results[0]['question'];
     //retrieve answer
     correctAnswer = data.results[0]['correct_answer'];
-    console.log(correctAnswer)
-    return correctAnswer
+    console.log(correctAnswer);
+    return correctAnswer;
 }
 
 // make btn that fetches---link btn, changing innerText to new Q
@@ -22,24 +23,16 @@ let newQuestion = document.querySelector("#new-question");
 newQuestion.addEventListener('click', getQuestion);
 
 console.log(correctAnswer)
-// Stores answer in 'answer' when submit clicked
-// check if answer is correct
+// Stores answer in 'answer' when submit clicked -- check if answer is correct
 function checkAnswerInput () {
-    useranswer = document.getElementById("useranswer").value;
-    // console.log(useranswer);
-    // return useranswer
-    if (useranswer === correctAnswer){
-        return console.log('It works')
-        }
-        else{
-            return console.log('wrong')
-        }   
+    userAnswer = document.getElementById("userAnswer").value;
+    if (userAnswer === correctAnswer)
+    return console.log('It works')
+    else    return console.log('wrong')
 }
 
 let submitButton = document.querySelector("#input-button")
 submitButton.addEventListener('click', checkAnswerInput)
-
-
 
 // ask their name to use in game?
 // check the answer and return r/w
